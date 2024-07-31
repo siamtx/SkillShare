@@ -1,4 +1,4 @@
-/*Default Styles*/
+f/*Default Styles*/
 * {
     margin: 0;
     padding: 0;
@@ -26,6 +26,57 @@ header {
     height: 100vh;
     position: relative;
 }
+/* Navigation */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 12rem;
+    padding: 0 15rem;
+    background-color: #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo span {
+    text-shadow: 0 0.5rem 1rem regba(0, 0, 0, 0.2);
+}
+
+.logo span:nth-child(1) {
+    font-family: "Mooli", cursive;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.logo span:nth-child(1)span {
+    display: inline-block;
+    font-size: 1.8rem;
+    transform: translateY(-0.8rem);
+
+}
+.logo span:nth-child(2) {
+    display: inline-block;
+    font-family: "Croissant One", cursive;
+    font-size: 1.5rem;
+    color: #ddd;
+    letter-spacing: .1rem;
+    text-align: right;
+    transform: translate(2.2rem, -1rem);
+}
+/* End of Logo */
+/* End of Navigation */
+
 /* Banner */
 .banner {
     position: absolute;
@@ -35,9 +86,9 @@ header {
 }
  .banner h1 {
     font-family: "Mooli", cursive;
-    font-size: 15rem;
+    font-size: 13rem;
     color: #fff;
-    text-shadow: 0 1rem 3rem rgba(0, 0, 0, .3);
+    text-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
  }
 
  .banner h3 {
@@ -60,7 +111,7 @@ header {
     text-transform: uppercase;
     letter-spacing: .1rem;
     color: #fff;
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .1);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
     margin-left: 1rem;
     cursor: pointer;
     transition: transform 0.3s;
@@ -70,18 +121,18 @@ header {
     transform: translateY(-.2rem);
  }
 /* End of Banner */
-/* Backgroundsx*/
+/* Backgrounds */
 .backgrounds div {
     position: absolute;
 }
 .bg-main {
     width: 150%;
     height: 150%;
-    background: linear-gradient(to left,transparent,
+    background: linear-gradient(to left, transparent,
     #4400c5, #4400ab);
     top: -95%;
     left: -10%;
-    transform: rotate(-15deg) skewX(30deg);
+    transform: rotateZ(-15deg) skewX(30deg);
     border-radius: 0 0 0 10rem;
     opacity: 0.9;
     z-index: 1;
@@ -93,7 +144,7 @@ header {
     background: linear-gradient(transparent 60%, #ff26ac, #f724db);
     top: -40%;
     right: -10%;
-    transform: rotate(-15deg) skewX(30deg);
+    transform: rotateZ(-15deg) skewX(30deg);
     border-radius: 0 0 0 5rem;
 }
 .bg-2 {
@@ -102,7 +153,7 @@ header {
     background: linear-gradient(transparent 70%, #ca5995, #fe945a);
     top:-60%;
     right: 10%;
-    transform: rotate(-15deg) skewX(30deg);
+    transform: rotateZ(-15deg) skewX(30deg);
     border-radius: 0 0 0 5rem;
     z-index: 2;
     opacity: 0.4;
