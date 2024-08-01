@@ -32,15 +32,13 @@ header {
     top: 0;
     left: 0;
     z-index: 10;
-    width: 100%;
+    width: 85%;
     height: 12rem;
     padding: 0 15rem;
-    background-color: #ccc;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 /* Logo */
 .logo {
     display: flex;
@@ -48,7 +46,7 @@ header {
 }
 
 .logo span {
-    text-shadow: 0 0.5rem 1rem regba(0, 0, 0, 0.2);
+    text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 .logo span:nth-child(1) {
@@ -58,12 +56,10 @@ header {
     text-transform: uppercase;
     color: #fff;
 }
-
-.logo span:nth-child(1)span {
+.logo span:nth-child(1) span{
     display: inline-block;
     font-size: 1.8rem;
     transform: translateY(-0.8rem);
-
 }
 .logo span:nth-child(2) {
     display: inline-block;
@@ -89,6 +85,7 @@ header {
     font-size: 13rem;
     color: #fff;
     text-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
+    margin: 0 0 3rem 1rem;
  }
 
  .banner h3 {
@@ -97,7 +94,7 @@ header {
     text-transform: uppercase;
     color: #fff;
     text-shadow: 0 1rem 3rem rgba(0, 0, 0, .1);
-    margin: 0 0 3rem 1rem;
+    margin: 0 0 5rem 1rem;
  }
 
  .banner button {
@@ -120,7 +117,7 @@ header {
  .banner button:hover {
     transform: translateY(-.2rem);
  }
-/* End of Banner */
+/* End of Banner */    
 /* Backgrounds */
 .backgrounds div {
     position: absolute;
@@ -157,7 +154,7 @@ header {
     border-radius: 0 0 0 5rem;
     z-index: 2;
     opacity: 0.4;
-    box-shadow: 7rem 4rem 6rem rgba(0, 0, 0, 0.9);
+    box-shadow: 7rem 4rem 6rem rgba(0, 0, 0, 0.9); 
 }
 /* End ofbackgrounds*/
 /* End of Header */
