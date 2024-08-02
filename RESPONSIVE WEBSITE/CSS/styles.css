@@ -97,6 +97,54 @@ html {
     width: 90rem;
     height: 60rem;
     display: flex;
+    border-radius: 1rem;
+    background-color: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+}
+
+.dropdown-1-left {
+    width: 30%;
+    padding-right: 3rem;
+}
+.dropdown-1-right {
+    width: 70%;
+    padding-right: 2rem;
+}
+
+
+.dropdown-1-left h3
+.dropdown-1-right h3 {
+    font-family: "Mooli", cursive;
+    font-size: 1.8rem;
+    color: #8698a7;
+    padding-bottom: 1rem;
+    margin-bottom: 3rem;
+    border-bottom: .2rem solid rgba(134, 152, 167, 0.5);
+}
+
+.features-list-item{
+    margin: 1.5rem 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.features-list-item i {
+    font-size: 2rem;
+    width: 4rem;
+    color: #8698a7;
+    transition: color 0.3s;
+}
+
+.features-list-item span {
+    font-size: 1.8rem;
+    color: #8698a7;
+    transition: color 0.3s;
+}
+
+.features-list-item:hover i
+.features-list-item:hover span {
+    color: #222;
 }
 /* End of Dropdown 1 */
 
