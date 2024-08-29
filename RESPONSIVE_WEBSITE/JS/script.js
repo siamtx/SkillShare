@@ -16,37 +16,10 @@ window.addEventListener("scroll", ()=> {
 const filterLinks = document.querySelectorAll('.filter-nav-link')
 
 filterLinks.forEach((filterLink) => {
-  filterLink.addEventListener('click', (e) => {
-    e.preventDefault()
-
-    document.querySelector('.filter-nav-link.active').classList.remove('active')
-    filterLink.classList.add('active')
-
-    const projects = document.querySelectorAll('.project')
-    projects.forEach((project) => {
-      project.classList.add('hide')
-
-      if (
-        filterLink.getAttribute('data-type') === project.getAttribute('data-type') ||
-        filterLink.getAttribute('data-type') === 'all'
-      ) {
-        project.classList.remove('hide')
-      }
-    })
-  })
-})
-// End of Projects
-
-
-/** 
-// Projects
-const filterLinks = document.querySelectorAll('.filter-nav-link')
-
-filterLinks.forEach((filterLink) => {
     filterLink.addEventListener('click', (e) => { 
         e.preventDefault()
 
-        document.querySelector('.filter-nav-link.acitve').classList.remove('active')
+        document.querySelector('.filter-nav-link.active').classList.remove('active')
         filterLink.classList.add("active")
 
         const projects = document.querySelectorAll('.project')
@@ -56,7 +29,7 @@ filterLinks.forEach((filterLink) => {
             if(filterLink.getAttribute('data-type') === project.
             getAttribute('data-type') || filterLink.getAttribute
             ("data-type") === 'all') {
-                project.classList.remove('hide')
+              project.classList.remove('hide')
                 }
         })
         
@@ -64,4 +37,4 @@ filterLinks.forEach((filterLink) => {
 })
     
 // End of Projects
-*/
+
