@@ -1008,7 +1008,7 @@ header {
     border-radius: 3rem;
     font-size: 1.8rem;
     font-weight: bold;
-    text-transform: bold;
+    text-transform: uppercase;
     letter-spacing: 0.1rem;
     color: #aa3fec;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
@@ -1059,7 +1059,7 @@ header {
     z-index: 5;
   }
 
-  .play-btn {
+.play-btn {
     width: 20rem;
     height: 20rem;
     background-color: #fff;
@@ -1096,9 +1096,6 @@ header {
     font-size: 7rem;
     color: #20252c;
 }
-
-
-
 
     /* End of Templates */
 

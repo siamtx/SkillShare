@@ -26,9 +26,10 @@ filterLinks.forEach((filterLink) => {
         projects.forEach((project) => {
             project.classList.add('hide')
 
-            if(filterLink.getAttribute('data-type') === project.
-            getAttribute('data-type') || filterLink.getAttribute
-            ("data-type") === 'all') {
+            if(
+                filterLink.getAttribute('data-type') === project.getAttribute('data-type') || 
+                filterLink.getAttribute("data-type") === 'all'
+            ) {
               project.classList.remove('hide')
                 }
         })
