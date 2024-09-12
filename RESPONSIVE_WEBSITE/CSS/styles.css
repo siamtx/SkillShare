@@ -962,7 +962,7 @@ header {
     content: "";
     width: 80rem;
     height: 80rem;
-    background: linear-gradient(to bottom, transparent, #8430ea, #8439ea);
+    background: linear-gradient(to bottom, transparent, #8430ea, #8430ea);
     z-index: 4;
     position: absolute;
     bottom: -5%;
